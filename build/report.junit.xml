@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Test Suite" tests="11" assertions="19" errors="0" warnings="0" failures="0" skipped="0" time="0.142329">
+    <testsuite name="Yab\LaravelMint\Tests\ArchivableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ArchivableTest.php" tests="4" assertions="12" errors="0" warnings="0" failures="0" skipped="0" time="0.116744">
+      <testcase name="a_model_can_be_archived" class="Yab\LaravelMint\Tests\ArchivableTest" classname="Yab.LaravelMint.Tests.ArchivableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ArchivableTest.php" line="11" assertions="4" time="0.106026"/>
+      <testcase name="archived_models_are_excluded_via_global_scope" class="Yab\LaravelMint\Tests\ArchivableTest" classname="Yab.LaravelMint.Tests.ArchivableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ArchivableTest.php" line="33" assertions="2" time="0.003392"/>
+      <testcase name="archived_models_can_be_retrieved_via_the_with_archived_scope" class="Yab\LaravelMint\Tests\ArchivableTest" classname="Yab.LaravelMint.Tests.ArchivableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ArchivableTest.php" line="46" assertions="2" time="0.003396"/>
+      <testcase name="a_model_can_be_unarchived" class="Yab\LaravelMint\Tests\ArchivableTest" classname="Yab.LaravelMint.Tests.ArchivableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ArchivableTest.php" line="59" assertions="4" time="0.003930"/>
+    </testsuite>
+    <testsuite name="Yab\LaravelMint\Tests\FactoryWithoutEventsTest" file="/Users/jimhlad/Code/laravel-mint/tests/FactoryWithoutEventsTest.php" tests="2" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.007420">
+      <testcase name="factory_events_are_enabled_by_default" class="Yab\LaravelMint\Tests\FactoryWithoutEventsTest" classname="Yab.LaravelMint.Tests.FactoryWithoutEventsTest" file="/Users/jimhlad/Code/laravel-mint/tests/FactoryWithoutEventsTest.php" line="11" assertions="1" time="0.004048"/>
+      <testcase name="factory_events_can_be_disabled_on_demand" class="Yab\LaravelMint\Tests\FactoryWithoutEventsTest" classname="Yab.LaravelMint.Tests.FactoryWithoutEventsTest" file="/Users/jimhlad/Code/laravel-mint/tests/FactoryWithoutEventsTest.php" line="19" assertions="1" time="0.003372"/>
+    </testsuite>
+    <testsuite name="Yab\LaravelMint\Tests\ImmutableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ImmutableTest.php" tests="3" assertions="3" errors="0" warnings="0" failures="0" skipped="0" time="0.010839">
+      <testcase name="an_immutable_model_can_be_created" class="Yab\LaravelMint\Tests\ImmutableTest" classname="Yab.LaravelMint.Tests.ImmutableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ImmutableTest.php" line="12" assertions="1" time="0.003407"/>
+      <testcase name="an_immutable_model_cannot_be_updated" class="Yab\LaravelMint\Tests\ImmutableTest" classname="Yab.LaravelMint.Tests.ImmutableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ImmutableTest.php" line="22" assertions="1" time="0.003896"/>
+      <testcase name="an_immutable_model_cannot_be_deleted" class="Yab\LaravelMint\Tests\ImmutableTest" classname="Yab.LaravelMint.Tests.ImmutableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ImmutableTest.php" line="34" assertions="1" time="0.003536"/>
+    </testsuite>
+    <testsuite name="Yab\LaravelMint\Tests\SavesQuietlyTest" file="/Users/jimhlad/Code/laravel-mint/tests/SavesQuietlyTest.php" tests="2" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.007326">
+      <testcase name="a_model_can_be_saved_loudly" class="Yab\LaravelMint\Tests\SavesQuietlyTest" classname="Yab.LaravelMint.Tests.SavesQuietlyTest" file="/Users/jimhlad/Code/laravel-mint/tests/SavesQuietlyTest.php" line="13" assertions="1" time="0.004010"/>
+      <testcase name="a_model_can_be_saved_quietly" class="Yab\LaravelMint\Tests\SavesQuietlyTest" classname="Yab.LaravelMint.Tests.SavesQuietlyTest" file="/Users/jimhlad/Code/laravel-mint/tests/SavesQuietlyTest.php" line="25" assertions="1" time="0.003316"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

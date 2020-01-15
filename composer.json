@@ -1,0 +1,46 @@
+{
+    "name": "yabhq/laravel-mint",
+    "description": "A collection of traits, macros and other helpers to keep your Laravel app feeling fresh.",
+    "keywords": ["yab", "yabhq", "laravel", "mint", "macros", "traits", "helpers"],
+    "homepage": "https://github.com/yabhq/laravel-mint",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jim",
+            "email": "jimhlad@gmail.com"
+        },
+        {
+            "name": "Chris",
+            "email": "chris@chrisblackwell.me"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "illuminate/support": "^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yab\\LaravelMint\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Yab\\LaravelMint\\Tests\\": "tests"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
