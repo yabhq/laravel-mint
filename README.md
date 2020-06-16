@@ -81,14 +81,12 @@ public function factory_events_can_be_disabled_on_demand()
 }
 ```
 
-# Future Features
+### Money Cast
 
-### DollarsToCents
-
-A custom cast which defines the necesssary accessors and mutators for storing monetary values as cents in the database while fetching them as decimal values.
+A custom cast for storing monetary values as cents in the database while fetching them as decimal values.
 
 ```php
 protected $casts = [
-    'cost' => 'dollars_to_cents',
+    'cost' => Yab\LaravelMint\Casts\Money::class,
 ];
 ```
