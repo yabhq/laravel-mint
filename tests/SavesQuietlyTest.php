@@ -1,11 +1,11 @@
 <?php
 
-namespace Yab\LaravelMint\Tests;
+namespace Yab\Mint\Tests;
 
 use Illuminate\Support\Facades\Event;
-use Yab\LaravelMint\Tests\TestCase;
-use Yab\LaravelMint\Tests\Models\EventfulModel;
-use Yab\LaravelMint\Tests\Events\EventfulModelSaved;
+use Yab\Mint\Tests\TestCase;
+use Yab\Mint\Tests\Models\EventfulModel;
+use Yab\Mint\Tests\Events\EventfulModelSaved;
 
 class SavesQuietlyTest extends TestCase
 {

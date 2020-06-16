@@ -1,9 +1,9 @@
 <?php
 
-namespace Yab\LaravelMint\Tests;
+namespace Yab\Mint\Tests;
 
-use Yab\LaravelMint\Tests\TestCase;
-use Yab\LaravelMint\Tests\Models\CastableModel;
+use Yab\Mint\Tests\TestCase;
+use Yab\Mint\Tests\Models\CastableModel;
 
 class MoneyCastTest extends TestCase
 {

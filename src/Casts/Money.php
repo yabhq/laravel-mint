@@ -1,6 +1,6 @@
 <?php
 
-namespace Yab\LaravelMint\Casts;
+namespace Yab\Mint\Casts;
 
 use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
 

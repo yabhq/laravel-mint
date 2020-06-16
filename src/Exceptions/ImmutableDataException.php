@@ -1,6 +1,6 @@
 <?php
 
-namespace Yab\LaravelMint\Exceptions;
+namespace Yab\Mint\Exceptions;
 
 use Exception;
 

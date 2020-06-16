@@ -1,6 +1,6 @@
 <?php
 
-namespace Yab\LaravelMint\Scopes;
+namespace Yab\Mint\Scopes;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Scope;

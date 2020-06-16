@@ -1,6 +1,6 @@
 <?php
 
-namespace Yab\LaravelMint\Macros;
+namespace Yab\Mint\Macros;
 
 use Closure;
 

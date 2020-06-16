@@ -1,12 +1,12 @@
 <?php
 
-namespace Yab\LaravelMint;
+namespace Yab\Mint;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\FactoryBuilder;
-use Yab\LaravelMint\Macros\FactoryBuilder as FactoryBuilderMacros;
+use Yab\Mint\Macros\FactoryBuilder as FactoryBuilderMacros;
 
-class LaravelMintServiceProvider extends ServiceProvider
+class MintServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.

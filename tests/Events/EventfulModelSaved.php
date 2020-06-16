@@ -1,6 +1,6 @@
 <?php
 
-namespace Yab\LaravelMint\Tests\Events;
+namespace Yab\Mint\Tests\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 
