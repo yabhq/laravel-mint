@@ -93,6 +93,6 @@ A custom cast for storing monetary values as cents in the database while fetchin
 
 ```php
 protected $casts = [
-    'cost' => Yab\LaravelMint\Casts\Money::class,
+    'cost' => Yab\Mint\Casts\Money::class,
 ];
 ```
