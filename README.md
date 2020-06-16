@@ -92,7 +92,12 @@ public function factory_events_can_be_disabled_on_demand()
 A custom cast for storing monetary values as cents in the database while fetching them as decimal values.
 
 ```php
-protected $casts = [
-    'cost' => Yab\Mint\Casts\Money::class,
-];
+use Yab\Mint\Casts\Money;
+
+class Example extends Model 
+{
+    protected $casts = [
+        'price' => Money::class,
+    ];
+}
 ```
