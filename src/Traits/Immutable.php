@@ -1,8 +1,8 @@
 <?php
 
-namespace Yab\LaravelMint\Traits;
+namespace Yab\Mint\Traits;
 
-use Yab\LaravelMint\Exceptions\ImmutableDataException;
+use Yab\Mint\Exceptions\ImmutableDataException;
 
 trait Immutable
 {

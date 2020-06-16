@@ -1,8 +1,8 @@
 <?php
 
-namespace Yab\LaravelMint\Tests\Models;
+namespace Yab\Mint\Tests\Models;
 
-use Yab\LaravelMint\Traits\Immutable;
+use Yab\Mint\Traits\Immutable;
 use Illuminate\Database\Eloquent\Model;
 
 class ImmutableModel extends Model

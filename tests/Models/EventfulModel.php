@@ -1,10 +1,10 @@
 <?php
 
-namespace Yab\LaravelMint\Tests\Models;
+namespace Yab\Mint\Tests\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Yab\LaravelMint\Traits\SavesQuietly;
-use Yab\LaravelMint\Tests\Events\EventfulModelSaved;
+use Yab\Mint\Traits\SavesQuietly;
+use Yab\Mint\Tests\Events\EventfulModelSaved;
 
 class EventfulModel extends Model
 {

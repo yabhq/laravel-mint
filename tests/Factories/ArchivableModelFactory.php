@@ -1,6 +1,6 @@
 <?php
 
-use Yab\LaravelMint\Tests\Models\ArchivableModel;
+use Yab\Mint\Tests\Models\ArchivableModel;
 
 $factory->define(ArchivableModel::class, function () {
     return [

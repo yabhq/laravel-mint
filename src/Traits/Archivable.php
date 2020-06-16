@@ -1,8 +1,8 @@
 <?php
 
-namespace Yab\LaravelMint\Traits;
+namespace Yab\Mint\Traits;
 
-use Yab\LaravelMint\Scopes\ArchivableScope;
+use Yab\Mint\Scopes\ArchivableScope;
 
 trait Archivable
 {
