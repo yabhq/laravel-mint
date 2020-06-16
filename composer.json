@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Yab\\LaravelMint\\": "src"
+            "Yab\\Mint\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Yab\\LaravelMint\\Tests\\": "tests"
+            "Yab\\Mint\\Tests\\": "tests"
         }
     },
     "minimum-stability": "dev",

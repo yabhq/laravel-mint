@@ -1,9 +1,9 @@
 <?php
 
-namespace Yab\LaravelMint\Tests;
+namespace Yab\Mint\Tests;
 
-use Yab\LaravelMint\Tests\TestCase;
-use Yab\LaravelMint\Tests\Models\ArchivableModel;
+use Yab\Mint\Tests\TestCase;
+use Yab\Mint\Tests\Models\ArchivableModel;
 
 class ArchivableTest extends TestCase
 {

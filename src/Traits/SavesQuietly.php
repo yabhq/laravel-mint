@@ -1,6 +1,6 @@
 <?php
 
-namespace Yab\LaravelMint\Traits;
+namespace Yab\Mint\Traits;
 
 trait SavesQuietly
 {

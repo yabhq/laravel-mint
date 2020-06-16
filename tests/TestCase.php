@@ -1,6 +1,6 @@
 <?php
 
-namespace Yab\LaravelMint\Tests;
+namespace Yab\Mint\Tests;
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
@@ -51,6 +51,6 @@ abstract class TestCase extends OrchestraTestCase
      */
     protected function getPackageProviders($app)
     {
-        return [ 'Yab\LaravelMint\LaravelMintServiceProvider' ];
+        return [ 'Yab\Mint\MintServiceProvider' ];
     }
 }

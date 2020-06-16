@@ -1,8 +1,8 @@
 <?php
 
-namespace Yab\LaravelMint\Tests\Models;
+namespace Yab\Mint\Tests\Models;
 
-use Yab\LaravelMint\Traits\Archivable;
+use Yab\Mint\Traits\Archivable;
 use Illuminate\Database\Eloquent\Model;
 
 class ArchivableModel extends Model

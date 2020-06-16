@@ -1,4 +1,4 @@
-# Laravel Mint
+# Mint for Laravel 7+
 
 A collection of traits, macros and other helpers to keep your Laravel app feeling fresh.
 

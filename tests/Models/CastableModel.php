@@ -1,8 +1,8 @@
 <?php
 
-namespace Yab\LaravelMint\Tests\Models;
+namespace Yab\Mint\Tests\Models;
 
-use Yab\LaravelMint\Casts\Money;
+use Yab\Mint\Casts\Money;
 use Illuminate\Database\Eloquent\Model;
 
 class CastableModel extends Model

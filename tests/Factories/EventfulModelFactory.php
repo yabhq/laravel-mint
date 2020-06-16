@@ -1,6 +1,6 @@
 <?php
 
-use Yab\LaravelMint\Tests\Models\EventfulModel;
+use Yab\Mint\Tests\Models\EventfulModel;
 
 $factory->define(EventfulModel::class, function () {
     return [];
