@@ -34,6 +34,12 @@ abstract class TestCase extends OrchestraTestCase
             $table->timestamps();
         });
 
+        Schema::create('castable_models', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('amount');
+            $table->timestamps();
+        });
+
         $this->withFactories(__DIR__ . '/Factories');
     }
 
