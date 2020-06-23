@@ -40,6 +40,11 @@ abstract class TestCase extends OrchestraTestCase
             $table->timestamps();
         });
 
+        Schema::create('uuid_models', function (Blueprint $table) {
+            $table->string('id');
+            $table->timestamps();
+        });
+
         $this->withFactories(__DIR__ . '/Factories');
     }
 
