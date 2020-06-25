@@ -1,27 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Test Suite" tests="12" assertions="21" errors="0" warnings="0" failures="0" skipped="0" time="0.112293">
-    <testsuite name="Yab\Mint\Tests\ArchivableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ArchivableTest.php" tests="4" assertions="12" errors="0" warnings="0" failures="0" skipped="0" time="0.076581">
-      <testcase name="a_model_can_be_archived" class="Yab\Mint\Tests\ArchivableTest" classname="Yab.Mint.Tests.ArchivableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ArchivableTest.php" line="11" assertions="4" time="0.065934"/>
-      <testcase name="archived_models_are_excluded_via_global_scope" class="Yab\Mint\Tests\ArchivableTest" classname="Yab.Mint.Tests.ArchivableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ArchivableTest.php" line="33" assertions="2" time="0.003670"/>
-      <testcase name="archived_models_can_be_retrieved_via_the_with_archived_scope" class="Yab\Mint\Tests\ArchivableTest" classname="Yab.Mint.Tests.ArchivableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ArchivableTest.php" line="46" assertions="2" time="0.003418"/>
-      <testcase name="a_model_can_be_unarchived" class="Yab\Mint\Tests\ArchivableTest" classname="Yab.Mint.Tests.ArchivableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ArchivableTest.php" line="59" assertions="4" time="0.003559"/>
+  <testsuite name="Test Suite" tests="16" assertions="30" errors="0" warnings="0" failures="0" skipped="0" time="0.291509">
+    <testsuite name="Yab\Mint\Tests\ArchivableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ArchivableTest.php" tests="4" assertions="12" errors="0" warnings="0" failures="0" skipped="0" time="0.130686">
+      <testcase name="a_model_can_be_archived" class="Yab\Mint\Tests\ArchivableTest" classname="Yab.Mint.Tests.ArchivableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ArchivableTest.php" line="11" assertions="4" time="0.101270"/>
+      <testcase name="archived_models_are_excluded_via_global_scope" class="Yab\Mint\Tests\ArchivableTest" classname="Yab.Mint.Tests.ArchivableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ArchivableTest.php" line="33" assertions="2" time="0.008317"/>
+      <testcase name="archived_models_can_be_retrieved_via_the_with_archived_scope" class="Yab\Mint\Tests\ArchivableTest" classname="Yab.Mint.Tests.ArchivableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ArchivableTest.php" line="46" assertions="2" time="0.009461"/>
+      <testcase name="a_model_can_be_unarchived" class="Yab\Mint\Tests\ArchivableTest" classname="Yab.Mint.Tests.ArchivableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ArchivableTest.php" line="59" assertions="4" time="0.011638"/>
     </testsuite>
-    <testsuite name="Yab\Mint\Tests\FactoryWithoutEventsTest" file="/Users/jimhlad/Code/laravel-mint/tests/FactoryWithoutEventsTest.php" tests="2" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.007329">
-      <testcase name="factory_events_are_enabled_by_default" class="Yab\Mint\Tests\FactoryWithoutEventsTest" classname="Yab.Mint.Tests.FactoryWithoutEventsTest" file="/Users/jimhlad/Code/laravel-mint/tests/FactoryWithoutEventsTest.php" line="11" assertions="1" time="0.003629"/>
-      <testcase name="factory_events_can_be_disabled_on_demand" class="Yab\Mint\Tests\FactoryWithoutEventsTest" classname="Yab.Mint.Tests.FactoryWithoutEventsTest" file="/Users/jimhlad/Code/laravel-mint/tests/FactoryWithoutEventsTest.php" line="19" assertions="1" time="0.003700"/>
+    <testsuite name="Yab\Mint\Tests\FactoryWithoutEventsTest" file="/Users/jimhlad/Code/laravel-mint/tests/FactoryWithoutEventsTest.php" tests="2" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.023984">
+      <testcase name="factory_events_are_enabled_by_default" class="Yab\Mint\Tests\FactoryWithoutEventsTest" classname="Yab.Mint.Tests.FactoryWithoutEventsTest" file="/Users/jimhlad/Code/laravel-mint/tests/FactoryWithoutEventsTest.php" line="11" assertions="1" time="0.012089"/>
+      <testcase name="factory_events_can_be_disabled_on_demand" class="Yab\Mint\Tests\FactoryWithoutEventsTest" classname="Yab.Mint.Tests.FactoryWithoutEventsTest" file="/Users/jimhlad/Code/laravel-mint/tests/FactoryWithoutEventsTest.php" line="19" assertions="1" time="0.011895"/>
     </testsuite>
-    <testsuite name="Yab\Mint\Tests\ImmutableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ImmutableTest.php" tests="3" assertions="3" errors="0" warnings="0" failures="0" skipped="0" time="0.013079">
-      <testcase name="an_immutable_model_can_be_created" class="Yab\Mint\Tests\ImmutableTest" classname="Yab.Mint.Tests.ImmutableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ImmutableTest.php" line="12" assertions="1" time="0.004062"/>
-      <testcase name="an_immutable_model_cannot_be_updated" class="Yab\Mint\Tests\ImmutableTest" classname="Yab.Mint.Tests.ImmutableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ImmutableTest.php" line="22" assertions="1" time="0.004767"/>
-      <testcase name="an_immutable_model_cannot_be_deleted" class="Yab\Mint\Tests\ImmutableTest" classname="Yab.Mint.Tests.ImmutableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ImmutableTest.php" line="34" assertions="1" time="0.004250"/>
+    <testsuite name="Yab\Mint\Tests\ImmutableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ImmutableTest.php" tests="3" assertions="3" errors="0" warnings="0" failures="0" skipped="0" time="0.036381">
+      <testcase name="an_immutable_model_can_be_created" class="Yab\Mint\Tests\ImmutableTest" classname="Yab.Mint.Tests.ImmutableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ImmutableTest.php" line="12" assertions="1" time="0.012715"/>
+      <testcase name="an_immutable_model_cannot_be_updated" class="Yab\Mint\Tests\ImmutableTest" classname="Yab.Mint.Tests.ImmutableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ImmutableTest.php" line="22" assertions="1" time="0.012399"/>
+      <testcase name="an_immutable_model_cannot_be_deleted" class="Yab\Mint\Tests\ImmutableTest" classname="Yab.Mint.Tests.ImmutableTest" file="/Users/jimhlad/Code/laravel-mint/tests/ImmutableTest.php" line="34" assertions="1" time="0.011267"/>
     </testsuite>
-    <testsuite name="Yab\Mint\Tests\MoneyCastTest" file="/Users/jimhlad/Code/laravel-mint/tests/MoneyCastTest.php" tests="1" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.005604">
-      <testcase name="monetary_values_are_stored_in_cents_and_retrieved_in_dollars" class="Yab\Mint\Tests\MoneyCastTest" classname="Yab.Mint.Tests.MoneyCastTest" file="/Users/jimhlad/Code/laravel-mint/tests/MoneyCastTest.php" line="11" assertions="2" time="0.005604"/>
+    <testsuite name="Yab\Mint\Tests\MoneyCastTest" file="/Users/jimhlad/Code/laravel-mint/tests/MoneyCastTest.php" tests="1" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.013825">
+      <testcase name="monetary_values_are_stored_in_cents_and_retrieved_in_dollars" class="Yab\Mint\Tests\MoneyCastTest" classname="Yab.Mint.Tests.MoneyCastTest" file="/Users/jimhlad/Code/laravel-mint/tests/MoneyCastTest.php" line="11" assertions="2" time="0.013825"/>
     </testsuite>
-    <testsuite name="Yab\Mint\Tests\SavesQuietlyTest" file="/Users/jimhlad/Code/laravel-mint/tests/SavesQuietlyTest.php" tests="2" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.009700">
-      <testcase name="a_model_can_be_saved_loudly" class="Yab\Mint\Tests\SavesQuietlyTest" classname="Yab.Mint.Tests.SavesQuietlyTest" file="/Users/jimhlad/Code/laravel-mint/tests/SavesQuietlyTest.php" line="13" assertions="1" time="0.005336"/>
-      <testcase name="a_model_can_be_saved_quietly" class="Yab\Mint\Tests\SavesQuietlyTest" classname="Yab.Mint.Tests.SavesQuietlyTest" file="/Users/jimhlad/Code/laravel-mint/tests/SavesQuietlyTest.php" line="25" assertions="1" time="0.004364"/>
+    <testsuite name="Yab\Mint\Tests\SavesQuietlyTest" file="/Users/jimhlad/Code/laravel-mint/tests/SavesQuietlyTest.php" tests="2" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.028089">
+      <testcase name="a_model_can_be_saved_loudly" class="Yab\Mint\Tests\SavesQuietlyTest" classname="Yab.Mint.Tests.SavesQuietlyTest" file="/Users/jimhlad/Code/laravel-mint/tests/SavesQuietlyTest.php" line="13" assertions="1" time="0.015293"/>
+      <testcase name="a_model_can_be_saved_quietly" class="Yab\Mint\Tests\SavesQuietlyTest" classname="Yab.Mint.Tests.SavesQuietlyTest" file="/Users/jimhlad/Code/laravel-mint/tests/SavesQuietlyTest.php" line="25" assertions="1" time="0.012796"/>
+    </testsuite>
+    <testsuite name="Yab\Mint\Tests\SlugifyTest" file="/Users/jimhlad/Code/laravel-mint/tests/SlugifyTest.php" tests="2" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.025342">
+      <testcase name="a_newly_created_model_has_a_slug_automatically_computed" class="Yab\Mint\Tests\SlugifyTest" classname="Yab.Mint.Tests.SlugifyTest" file="/Users/jimhlad/Code/laravel-mint/tests/SlugifyTest.php" line="11" assertions="1" time="0.012311"/>
+      <testcase name="duplicate_slugs_are_handled_gracefully" class="Yab\Mint\Tests\SlugifyTest" classname="Yab.Mint.Tests.SlugifyTest" file="/Users/jimhlad/Code/laravel-mint/tests/SlugifyTest.php" line="25" assertions="4" time="0.013031"/>
+    </testsuite>
+    <testsuite name="Yab\Mint\Tests\UuidTest" file="/Users/jimhlad/Code/laravel-mint/tests/UuidTest.php" tests="2" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="0.033202">
+      <testcase name="a_newly_created_uuid_model_has_a_uuid" class="Yab\Mint\Tests\UuidTest" classname="Yab.Mint.Tests.UuidTest" file="/Users/jimhlad/Code/laravel-mint/tests/UuidTest.php" line="12" assertions="2" time="0.020986"/>
+      <testcase name="the_uuid_of_a_model_can_not_be_altered" class="Yab\Mint\Tests\UuidTest" classname="Yab.Mint.Tests.UuidTest" file="/Users/jimhlad/Code/laravel-mint/tests/UuidTest.php" line="24" assertions="2" time="0.012216"/>
     </testsuite>
   </testsuite>
 </testsuites>
