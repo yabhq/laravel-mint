@@ -2,10 +2,10 @@
 
 namespace Yab\Mint\Tests\Models;
 
-use Yab\Mint\Traits\Uuid;
 use Illuminate\Database\Eloquent\Model;
+use Yab\Mint\Traits\UuidModel as UuidModelTrait;
 
 class UuidModel extends Model
 {
-    use Uuid;
+    use UuidModelTrait;
 }

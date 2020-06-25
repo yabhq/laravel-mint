@@ -4,14 +4,14 @@ namespace Yab\Mint\Traits;
 
 use Ramsey\Uuid\Uuid as RamseyUuid;
 
-trait Uuid
+trait UuidModel
 {
     /**
      * Hook into the boot method to catch creating and saving events
      *
      * @return void
      */
-    public static function bootUuid()
+    public static function bootUuidModel()
     {
         static::creating(function ($model) {
             $model->id = RamseyUuid::uuid4()->toString();
