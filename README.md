@@ -18,11 +18,12 @@ Save a model "quietly" without broadcasting any events or firing off any observe
 ```php
 use Yab\Mint\Traits\SavesQuietly;
 
-class Example extends Model 
+class Example extends Model
 {
     use SavesQuietly;
 }
 ```
+
 ```php
 $example->saveQuietly();
 ```
@@ -34,11 +35,12 @@ Allow for models to be archived or unarchived based on an "archived_at" field on
 ```php
 use Yab\Mint\Traits\Archivable;
 
-class Example extends Model 
+class Example extends Model
 {
     use Archivable;
 }
 ```
+
 ```php
 $example->archive();
 $example->unarchive();
@@ -54,11 +56,12 @@ Models which are marked as "immutable" will throw an ImmutableDataException if u
 ```php
 use Yab\Mint\Traits\Immutable;
 
-class Example extends Model 
+class Example extends Model
 {
     use Immutable;
 }
 ```
+
 ```php
 // No problem
 $example = Example::create([
@@ -101,10 +104,40 @@ A custom cast for storing monetary values as cents in the database while fetchin
 ```php
 use Yab\Mint\Casts\Money;
 
-class Example extends Model 
+class Example extends Model
 {
     protected $casts = [
         'price' => Money::class,
     ];
+}
+```
+
+### Slugify
+
+Create slugs that are unique and never collide with each other
+
+```php
+use Yab\Mint\Trails\Slugify;
+
+class Example extends Model
+{
+    use Slugify
+}
+```
+
+By default the Slugify trait uses the `name` property on your model. You can change this
+by overriding the `getSlugKeyName` method.
+
+```php
+use Yab\Mint\Trails\Slugify;
+
+class Example extends Model
+{
+    use Slugify;
+
+    public static function getSlugKeyName(): string
+    {
+        return 'title';
+    }
 }
 ```

@@ -11,7 +11,7 @@ trait Slugify
     {
         static::creating(function ($model) {
             if (is_null($model->slug)) {
-                $model->slug = Str::slug($model->name);
+                $model->slug = Str::slug($model->{self::getSlugKeyName()});
             }
             $model->slug = self::checkModelSlug($model->slug);
         });
@@ -61,6 +61,16 @@ trait Slugify
     public function scopeBySlug(Builder $scope, string $slug): Builder
     {
         return $scope->where('slug', $slug);
+    }
+
+    /**
+     * Set the model property that will be used to create the slug
+     *
+     * @return string
+     */
+    public static function getSlugKeyName(): string
+    {
+        return 'name';
     }
 
     /**
