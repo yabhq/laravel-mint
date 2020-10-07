@@ -1,5 +1,7 @@
 <?php
 
+namespace Yab\Mint\Tests\Factories;
+
 use Yab\Mint\Tests\Models\ArchivableModel;
 
 $factory->define(ArchivableModel::class, function () {
@@ -8,7 +10,7 @@ $factory->define(ArchivableModel::class, function () {
     ];
 });
 
-$factory->state(ArchivableModel::class, 'archived', function() {
+$factory->state(ArchivableModel::class, 'archived', function () {
     return [
         'archived_at' => now()->toDateTimeString(),
     ];
