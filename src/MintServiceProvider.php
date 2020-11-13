@@ -14,6 +14,12 @@ class MintServiceProvider extends ServiceProvider
     public function boot()
     {
         FactoryBuilder::mixin(new FactoryBuilderMacros);
+
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                __DIR__.'/Stubs' => app_path('stubs'),
+            ], 'stubs');
+        }
     }
 
     /**
@@ -21,6 +27,5 @@ class MintServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        
     }
 }

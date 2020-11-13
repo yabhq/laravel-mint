@@ -1,0 +1,20 @@
+<?php
+
+namespace {{ namespace }}\Feature;
+
+use Tests\TestCase;
+use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+
+class {{ class }} extends TestCase
+{
+    use RefreshDatabase;
+
+    /** @test */
+    public function test_example()
+    {
+        $response = $this->post(route('api.test.example'), []);
+
+        // $response->assertOk();
+    }
+}
