@@ -11,6 +11,14 @@ A collection of traits, macros and other helpers to keep your Laravel app feelin
 composer require yabhq/mint
 ```
 
+### Configuration
+
+The package ships with some useful stub customizations for common controller and test case starter code.
+
+```
+php artisan vendor:publish --tag="stubs"
+```
+
 ### SavesQuietly
 
 Save a model "quietly" without broadcasting any events or firing off any observers.
