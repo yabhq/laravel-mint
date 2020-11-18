@@ -13,8 +13,18 @@ class {{ class }} extends TestCase
     /** @test */
     public function test_example()
     {
-        $response = $this->post(route('api.test.example'), []);
+        $response = $this->post(route('api.example'), []);
 
         // $response->assertOk();
+
+        // $response->assertJson([
+        //      
+        // ]);
+
+        // $response->assertJsonStructure([
+        //     'errors' => [
+        //          
+        //     ],
+        // ]);
     }
 }
