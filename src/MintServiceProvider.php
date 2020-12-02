@@ -17,7 +17,7 @@ class MintServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/Stubs' => app_path('stubs'),
+                __DIR__.'/Stubs' => base_path('stubs'),
             ], 'stubs');
         }
     }
