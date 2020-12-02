@@ -1,5 +1,5 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/yabhq/mint.svg?style=flat-square)](https://packagist.org/packages/yabhq/mint)
-[![CircleCI](https://img.shields.io/circleci/project/github/yabhq/mint/master.svg)](https://circleci.com/gh/yabhq/mint)
+[![CircleCI](https://img.shields.io/circleci/project/github/yabhq/laravel-mint/master.svg)](https://circleci.com/gh/yabhq/mint)
 
 # Mint for Laravel 7+
 
