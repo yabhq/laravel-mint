@@ -8,7 +8,7 @@ A collection of traits, macros and other helpers to keep your Laravel app feelin
 ### Installation
 
 ```
-composer require yabhq/mint
+composer require yabhq/laravel-mint
 ```
 
 ### Configuration
