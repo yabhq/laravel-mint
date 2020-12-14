@@ -14,7 +14,7 @@ class {{ class }} extends Controller
      */
     public function index()
     {
-        ${{ modelVariable }}s = {{ model }}::paginate(25);
+        ${{ modelVariable }}s = {{ model }}::paginate();
 
         return view('{{ modelVariable }}s.index', compact('{{ modelVariable }}s'));
     }
