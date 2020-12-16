@@ -35,6 +35,26 @@ trait UuidModel
     }
 
     /**
+     * Get the primary key for the model.
+     *
+     * @return string
+     */
+    public function getKeyName()
+    {
+        return 'id';
+    }
+
+    /**
+     * Get the auto-incrementing key type.
+     *
+     * @return string
+     */
+    public function getKeyType()
+    {
+        return 'string';
+    }
+
+    /**
      * Get the value indicating whether the IDs are incrementing.
      *
      * @return bool
