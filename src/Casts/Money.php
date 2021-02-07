@@ -17,6 +17,9 @@ class Money implements CastsAttributes
      */
     public function get($model, $key, $value, $attributes)
     {
+        if (is_null($value)) {
+            return $value;
+        }
         return $value * 0.01;
     }
 
@@ -25,7 +28,7 @@ class Money implements CastsAttributes
      *
      * @param  \Illuminate\Database\Eloquent\Model  $model
      * @param  string  $key
-     * @param  array  $value
+     * @param  mixed  $value
      * @param  array  $attributes
      * @return string
      */

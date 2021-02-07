@@ -15,7 +15,7 @@ class CreateCastableModelsTable extends Migration
     {
         Schema::create('castable_models', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('amount');
+            $table->integer('amount')->nullable();
             $table->timestamps();
         });
     }

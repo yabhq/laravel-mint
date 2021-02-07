@@ -23,4 +23,21 @@ class MoneyCastTest extends TestCase
 
         $this->assertEquals(39.95, $model->amount);
     }
+
+    /** @test */
+    public function money_casted_value_returns_null_if_null_in_database()
+    {
+        $model = CastableModel::create([
+            'amount' => null,
+        ]);
+
+        $this->assertDatabaseHas('castable_models', [
+            'id' => $model->id,
+            'amount' => null
+        ]);
+
+        $model = $model->fresh();
+
+        $this->assertNull($model->amount);
+    }
 }
