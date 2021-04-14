@@ -20,7 +20,7 @@ class Money implements CastsAttributes
         if (is_null($value)) {
             return $value;
         }
-        return $value * 0.01;
+        return round($value * 0.01, 2);
     }
 
     /**
