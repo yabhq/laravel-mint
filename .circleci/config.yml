@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # Specify the version you desire here
-      - image: circleci/php:7.3-cli
+      - image: circleci/php:8.0-cli
 
     steps:
       - checkout
