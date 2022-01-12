@@ -5,6 +5,7 @@ namespace Yab\Mint\Tests;
 use Ramsey\Uuid\Uuid;
 use Yab\Mint\Tests\TestCase;
 use Yab\Mint\Tests\Models\UuidModel;
+use Yab\Mint\Tests\Models\UuidColumnModel;
 
 class UuidTest extends TestCase
 {
@@ -34,6 +35,18 @@ class UuidTest extends TestCase
 
         $this->assertDatabaseHas('uuid_models', [
             'id' => $originalId,
+        ]);
+    }
+
+    /** @test */
+    public function the_uuid_column_name_can_be_customized()
+    {
+        $model = factory(UuidColumnModel::class)->create();
+
+        $this->assertTrue(Uuid::isValid($model->uuid));
+
+        $this->assertDatabaseHas('uuid_column_models', [
+            'uuid' => $model->uuid,
         ]);
     }
 }
