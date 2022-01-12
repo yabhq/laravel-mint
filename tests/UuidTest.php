@@ -39,7 +39,7 @@ class UuidTest extends TestCase
     }
 
     /** @test */
-    public function the_uuid_column_name_can_be_customized()
+    public function the_uuid_column_name_can_be_customized_on_the_model()
     {
         $model = factory(UuidColumnModel::class)->create();
 
