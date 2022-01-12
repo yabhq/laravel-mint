@@ -14,12 +14,12 @@ trait UuidModel
     public static function bootUuidModel()
     {
         static::creating(function ($model) {
-            $model->id = RamseyUuid::uuid4()->toString();
+            $model->{self::getUuidColumnName()} = RamseyUuid::uuid4()->toString();
         });
 
         static::saving(function ($model) {
-            if ($model->id !== $model->getOriginal('id')) {
-                $model->id = $model->getOriginal('id');
+            if ($model->{self::getUuidColumnName()} !== $model->getOriginal(self::getUuidColumnName())) {
+                $model->{self::getUuidColumnName()} = $model->getOriginal(self::getUuidColumnName());
             }
         });
     }
@@ -40,6 +40,16 @@ trait UuidModel
      * @return string
      */
     public function getKeyName()
+    {
+        return 'id';
+    }
+
+    /**
+     * Set the UUID column name for the model.
+     *
+     * @return string
+     */
+    public static function getUuidColumnName(): string
     {
         return 'id';
     }
