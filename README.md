@@ -1,7 +1,7 @@
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/yabhq/mint.svg?style=flat-square)](https://packagist.org/packages/yabhq/mint)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/yabhq/laravel-mint.svg?style=flat-square)](https://packagist.org/packages/yabhq/laravel-mint)
 [![CircleCI](https://img.shields.io/circleci/project/github/yabhq/laravel-mint/master.svg)](https://circleci.com/gh/yabhq/mint)
 
-# Mint for Laravel 7+
+# Mint for Laravel 8+
 
 A collection of traits, macros and other helpers to keep your Laravel app feeling fresh.
 
@@ -18,24 +18,6 @@ The package ships with some useful stub customizations for common controller and
 ```
 php artisan vendor:publish --tag="stubs"
 ```
-
-### SavesQuietly
-
-Save a model "quietly" without broadcasting any events or firing off any observers.
-
-```php
-use Yab\Mint\Traits\SavesQuietly;
-
-class Example extends Model
-{
-    use SavesQuietly;
-}
-```
-
-```php
-$example->saveQuietly();
-```
-
 ### Archivable
 
 Allow for models to be archived or unarchived based on an "archived_at" field on the database table. A global scope automatically excludes archived records when querying your model.
