@@ -11,13 +11,6 @@ A collection of traits, macros and other helpers to keep your Laravel app feelin
 composer require yabhq/laravel-mint
 ```
 
-### Configuration
-
-The package ships with some useful stub customizations for common controller and test case starter code.
-
-```
-php artisan vendor:publish --tag="stubs"
-```
 ### Archivable
 
 Allow for models to be archived or unarchived based on an "archived_at" field on the database table. A global scope automatically excludes archived records when querying your model.
@@ -73,17 +66,25 @@ public function isImmutable()
 }
 ```
 
-### WithoutEvents
+### UUID Models
 
-When writing tests using the factory helper, sometimes it is desirable not to trigger any observer logic.
-
-This package includes a built-in macro which helps with this:
+Easily use UUIDs for your model's primary key by leveraging the UuidModel trait:
 
 ```php
-/** @test */
-public function factory_events_can_be_disabled_on_demand()
+use Yab\Mint\Traits\UuidModel;
+
+class Example extends Model
 {
-    $example = factory(Example::class)->withoutEvents()->create();
+    use UuidModel;
+}
+```
+
+If you would like to customize the name of the UUID column, simply add the getUuidColumnName function in your model class:
+
+```php
+public static function getUuidColumnName(): string
+{
+    return 'my_column_name';
 }
 ```
 
@@ -104,7 +105,7 @@ class Example extends Model
 
 ### Slugify
 
-Create slugs that are unique and never collide with each other
+Create slugs that are unique and never collide with each other.
 
 ```php
 use Yab\Mint\Trails\Slugify;
@@ -115,19 +116,43 @@ class Example extends Model
 }
 ```
 
-By default the Slugify trait uses the `name` property on your model. You can change this
-by overriding the `getSlugKeyName` method.
+By default the Slugify trait uses the name property on your model. You can change this
+by overriding the getSlugKeyName method on your model.
 
 ```php
-use Yab\Mint\Trails\Slugify;
-
-class Example extends Model
+public static function getSlugKeyName(): string
 {
-    use Slugify;
+    return 'title';
+}
+```
 
-    public static function getSlugKeyName(): string
-    {
-        return 'title';
-    }
+### Avatars
+
+The HasAvatar trait allows you to easily support avatars for your users. It even has a built-in Gravatar fallback!
+
+```php
+use Yab\Mint\Trails\HasAvatar;
+
+class User extends Model
+{
+    use HasAvatar;
+}
+```
+
+You can customize the database field used to retrieve the profile images:
+
+```php
+public function getAvatarField() : string
+{
+    return 'profile_picture';
+}
+```
+
+It is also possible to determine which field is used for the Gravatar email address:
+
+```php
+public function getEmailField(): string
+{
+    return 'email';
 }
 ```
