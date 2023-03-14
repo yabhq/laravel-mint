@@ -115,7 +115,7 @@ class Example extends Model
 }
 ```
 
-By default the Slugify trait uses the name property on your model. You can change this
+By default the Slugify trait uses the name property on your model. You can change this behaviour
 by overriding the getSlugKeyName method on your model.
 
 ```php
