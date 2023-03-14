@@ -34,6 +34,9 @@ class Money implements CastsAttributes
      */
     public function set($model, $key, $value, $attributes)
     {
+        if (is_null($value)) {
+            return $value;
+        }
         return floatval($value) * 100;
     }
 }
