@@ -35,9 +35,7 @@ jobs:
 
       - name: Prepare Laravel Application
         run: |
-          cp .env.ci .env
           php artisan key:generate
-          npm run build
 
       - name: Run Testsuite
         run: vendor/bin/phpunit tests/
