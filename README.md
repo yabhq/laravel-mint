@@ -111,7 +111,7 @@ use Yab\Mint\Trails\Slugify;
 
 class Example extends Model
 {
-    use Slugify
+    use Slugify;
 }
 ```
 
